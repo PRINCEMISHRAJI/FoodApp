@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 const { mongo, default: mongoose } = require('mongoose');
+const cors = require('cors');
 app.use(cors());
 app.use(express.json()); //global middleware
 app.use(express.static('public/build'))
